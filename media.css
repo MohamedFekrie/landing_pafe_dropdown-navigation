@@ -1,0 +1,119 @@
+/* Header */
+@media(max-width: 991px) {
+    header .container .open-menu {
+        cursor: pointer;
+        display: block;
+    }
+
+    header .container .close-menu {
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        display: none;
+        right: -78px;
+        top: 20px;
+    }
+
+    header .container .content {
+        position: absolute;
+        top: 0;
+        right: -300px;
+        background-color: #fff;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 234px;
+        z-index: 100000000045;
+    }
+
+    header .container .content > ul {
+        padding: 60px 0 30px 15px;
+        width: 100%;
+        display: block;
+    }
+
+    header .container .content > ul > li {
+        margin-bottom: 18px;
+    }
+
+    header .container .content ul li .mega-menu ul {
+        /*        display: none;*/
+        position: unset;
+        box-shadow: unset;
+        margin: 0;
+    }
+
+    header .container .content > ul > li .mega-menu ul li {}
+
+    header .container .content ul li .mega-menu.active {
+        display: block;
+    }
+
+    header .container .content ul li > ul li {
+        display: flex;
+        align-items: center;
+    }
+
+    header .container .content .mega-menu ul li img {
+        width: 25px;
+        margin-right: 5px;
+    }
+
+    header .container .content .right {
+        flex-direction: column;
+    }
+
+    header .container .content .right span {
+        display: block;
+        padding-bottom: 20px;
+        margin-right: 0;
+    }
+
+    header .container .content .right .btn {
+        border-radius: 14px;
+        padding: 12px 59px;
+    }
+}
+
+/* Header */
+/* Landing */
+@media(max-width: 991px) {
+    .landing .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .landing .content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .landing .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing .content .text-content p {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .landing .content .text-content h1 {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .landing .content .text-content .btn {
+        margin: auto;
+        margin: 10px 0;
+    }
+
+    .landing .content .cumpanies {
+        position: unset;
+        margin: 30px auto;
+    }
+}
+
+/* Landing */

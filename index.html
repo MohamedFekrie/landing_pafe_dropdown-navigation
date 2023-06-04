@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="container">
+            <div class="logo">snap</div>
+            <img src="images/icon-menu.svg" class="open-menu">
+            <div class="content">
+                <img src="images/icon-close-menu.svg" class="close-menu">
+                <ul>
+                    <li class="parent">
+                        <span data-num="1">Features</span>
+                        <img src="images/icon-arrow-down.svg">
+                        <div class="mega-menu">
+                            <ul class="drop-down d-none">
+                                <li>
+                                    <img src="images/icon-todo.svg">
+                                    <span>Todo List</span>
+                                </li>
+                                <li>
+                                    <img src="images/icon-calendar.svg">
+                                    <span>Calender</span>
+                                </li>
+                                <li>
+                                    <img src="images/icon-reminders.svg">
+                                    <span>Reminders</span>
+                                </li>
+                                <li>
+                                    <img src="images/icon-planning.svg">
+                                    <span>Planning</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="parent">
+                        <span data-num="2">Company</span>
+                        <img src="images/icon-arrow-down.svg" alt="">
+                        <div class="mega-menu">
+                            <ul class="drop-down d-none">
+                                <li><span>History</span></li>
+                                <li><span>Our Team</span></li>
+                                <li><span>Blog</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><span>Careers</span></li>
+                    <li><span>About</span></li>
+                </ul>
+                <div class="right">
+                    <span>Login</span>
+                    <span class="btn">Register</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="landing">
+        <div class="container">
+            <div class="content">
+                <div class="text-content">
+                    <h1>Make remote work</h1>
+                    <p>
+                        Get your team in sync, no matter your location. Streamline processes,
+                        create team rituals, and watch productivity soar.
+                    </p>
+                    <div class="btn">Learn more</div>
+                </div>
+                <div class="cumpanies">
+                    <img src="images/client-databiz.svg" alt="">
+                    <img src="images/client-audiophile.svg" alt="">
+                    <img src="images/client-meet.svg" alt="">
+                    <img src="images/client-maker.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/image-hero-desktop.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--  Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more-->
+    <script src="main.js"></script>
+</body>
+
+</html>

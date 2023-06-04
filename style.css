@@ -1,0 +1,231 @@
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --main-transition: .3s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    overflow: hidden;
+    background-color: var(--Almost-White:)
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 0;
+    display: none;
+    /*    z-index: 100000043;*/
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 0;
+    position: relative;
+}
+
+header .container .logo {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+
+header .container .content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Medium-Gray);
+    transition: var(--main-transition);
+    user-select: none;
+    margin-left: 25px;
+}
+
+header .container .content > ul {
+    display: flex;
+    margin-left: 25px;
+}
+
+header .container .content > ul > li {
+    margin-right: 35px;
+    position: relative;
+}
+
+header span {
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+header span:hover {
+    color: #000;
+}
+
+header .container .content ul li img {
+    padding-left: 3px;
+}
+
+
+header .container .content > ul > li > ul {
+    display: block;
+    position: absolute;
+    bottom: -90px;
+}
+
+header .container .content > ul > li .mega-menu ul {
+    padding: 20px 0 10px 20px;
+    position: absolute;
+    left: -13px;
+    top: 36px;
+    background-color: #fff;
+    box-shadow: 0px 0 15px #00000039;
+    font-size: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+header .content .parent:first-of-type .mega-menu ul {
+    left: -57px;
+    width: 145px;
+}
+
+header .container .content > ul > li:nth-child(2) .mega-menu ul {
+    left: 10px;
+    width: 110px;
+}
+
+
+header .content .parent ul li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+header .content .parent ul li img {
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+header .content .parent ul li span {
+    font-size: 17px;
+}
+
+header .container .content .right {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container .content .right span {
+    margin-right: 40px;
+}
+
+header .container .content .right .btn {
+    border: 2px solid;
+    border-radius: 13px;
+    padding: 10px 22px;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+header .container .close-menu,
+header .container .open-menu {
+    display: none;
+}
+
+/* Header */
+
+/* Landing */
+.landing {
+    height: calc(100vh - 61px);
+}
+
+.landing .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.landing .content {
+    margin-right: 154px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.landing .content h1 {
+    font-size: 56px;
+}
+
+.landing .content p {
+    color: var(--Medium-Gray);
+    line-height: 1.6;
+    margin: 60px 0;
+}
+
+.landing .content .btn {
+    background-color: var(--Almost-Black);
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    padding: 16px 25px;
+    border-radius: 10px;
+    border: 1px solid var(--Almost-Black);
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+
+.landing .content .btn:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid var(--Almost-Black);
+}
+
+.landing .content .cumpanies {
+    position: absolute;
+    bottom: 130px;
+}
+
+.landing .content .cumpanies img {
+    margin-right: 30px;
+}
+
+.landing .img img {
+    width: 100%;
+}
+
+/* Landing */
